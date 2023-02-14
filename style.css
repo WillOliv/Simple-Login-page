@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: blue;
+    border: 5px solid black;
+}
+
+.main-div{
+    background-color: red;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 500px;
+    height: 250px;
+}
+
+.left-div{
+    background-color: green;
+    width: 45%;
+    height: 90%;
+}
+
+.right-div{
+    background-color: yellow;
+    width: 45%;
+    height: 90%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.main-login{
+    background-color: purple;
+    width: 90%;
+    height: 90%;
+}
