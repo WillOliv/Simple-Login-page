@@ -3,41 +3,108 @@
     padding: 0;
     border: 0;
     box-sizing: border-box;
+    color: white;
+}
+
+:root{
+    --color-1: #211522;
+    --color-2: #613659;
+    --color-3: #C197D2;
+    --color-4: #D3B1C2;
 }
 
 body{
-    background-color: blue;
-    border: 5px solid black;
+    background-color: rgb(16, 14, 18);
+    border: 5px solid blue;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .main-div{
-    background-color: red;
+    background-color: #1F0838;
+
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 500px;
-    height: 250px;
+
+    width: 60vw;
+    height: 60vh;
+
+    margin: 5vw;
+    padding: 2%;
+    border-radius: 30px ;
 }
 
+/*----------------- Left -----------------*/ 
 .left-div{
-    background-color: green;
+    border: 1px solid green;
     width: 45%;
     height: 90%;
 }
 
+
+/*----------------- Right -----------------*/ 
 .right-div{
-    background-color: yellow;
-    width: 45%;
-    height: 90%;
-    
+    border: 1px solid green;
+
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 
+    width: 45%;
+    height: 90%;
 }
+
 
 .main-login{
-    background-color: purple;
-    width: 90%;
-    height: 90%;
+    background-color: #370E65;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    width: 95%;
+    height: 80%;
+
+    border-radius: 15px;
+    padding: 5%;
+}
+
+.main-login .title-login{
+    display: flex;
+    justify-content: space-evenly;
+
+    font-size: 25px;
+}
+
+.main-form{
+    height: 60%;
+}
+
+.main-form .user-form ,
+.main-form .password-form {
+    font-size: 10px;
+    margin: 5% 0%;
+}
+
+.main-login .button{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.button{
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.button button{
+    background-color: transparent;
+}
+
+.button a{
+    text-decoration: none;
+    font-size: 20px;
 }
