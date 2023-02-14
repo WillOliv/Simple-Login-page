@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400;700&family=Roboto:wght@100;400;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     border: 0;
     box-sizing: border-box;
-    color: white;
+    color: var(--green-4);
 }
 
 :root{
@@ -16,12 +19,10 @@
     --green-2: #1F6C05;
     --green-3: #9eff85;
     --green-4: #ceffc2;
-
 }
 
 body{
     background-color: rgb(16, 14, 18);
-    border: 5px solid blue;
 
     display: flex;
     justify-content: space-evenly;
@@ -32,22 +33,21 @@ body{
     background-color: var(--purple-1);
 
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 
-    width: 60vw;
-    height: 60vh;
+    width: 65vw;
+    height: 65vh;
 
-    margin: 5vw;
-    padding: 2%;
-    border-radius: 30px ;
+    margin : 5vw;
+    border-radius: 2.5vw ;
 }
 
 /*----------------- Left Div-----------------*/ 
 .left-div{
-    border: 1px solid green;
-    width: 55%;
-    height: 90%;
+
+    width: 54%;
+    height: 99%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -55,22 +55,19 @@ body{
 }
 
 .left-div .left-title{
-    color: var(--green-3);
 
     width: 90%;
-    height: 10%;
+    height: 20%;
 
-    margin: 1%;
-    padding: 1%;
-    font-size: 1.75vw;
+    margin-top: 3%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2vw;
     text-align: center;
 
 }
 
 .left-img{
-    width: 95%;
-    height: 85%;
-
+    height: 75%;
 }
 
 .left-img img{
@@ -80,16 +77,15 @@ body{
 
 /*----------------- Right Div -----------------*/ 
 .right-div{
-    border: 1px solid green;
-
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 
-    width: 40%;
-    height: 90%;
+    width: 44%;
+    height: 99%;
+
 }
-
 
 .main-login{
     background-color: var(--purple-2);
@@ -98,25 +94,23 @@ body{
     flex-direction: column;
     justify-content: space-evenly;
 
-    width: 95%;
-    height: 95%;
+    width: 85%;
+    height: 55%;
 
-    border-radius: 15px;
-    padding: 5%;
+    border-radius: 1.5vw;
+    padding: 1% 5%;
 }
 
 .main-login .title-login{
-    background-color: #9eff85;
-    color: var(--purple-1);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.75vw;
+
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 
-    margin: 1vw;
     padding: 0.25vw;
     border-radius: 1vw;
-    
-    font-size: 1.75vw;
 }
 
 .main-form{
@@ -125,18 +119,15 @@ body{
 
 .main-form .user-form ,
 .main-form .password-form {
-    font-size: 10px;
-    margin: 5% 0%;
-}
-
-
-.main-login .button{
-    display: flex;
-    justify-content: space-evenly;
+    font-size: 0.75vw;
+    font-family: 'Roboto Mono', monospace;
+    margin: 2% 0%;
 }
 
 .user-input input,
 .password-input input{
+    font-size: 1.25vw;
+
     background-color: var(--purple-3);
     color: var(--purple-1);
     text-align: center;
@@ -149,6 +140,7 @@ body{
 
 ::placeholder {
     color: var(--purple-1);
+    font-size: 1.25vw;
   }
 
 .button{
@@ -161,16 +153,41 @@ body{
 
 .button button{
     background-color: var(--green-3);
-    width: 50%;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.5vw;
+    font-weight: 700;
+    
+    width: 45%;
     height: 80%;
     
-    border-radius: 2vw;
+    border-radius: 0.5vw;
 
 }
 
 .button a{
-    color: var(--purple-1);
+    color: var(--purple-2);
     text-decoration: none;
-    font-size: 1.5vw;
+
     cursor: pointer;
+}
+
+.button :hover{
+    background-color: var(--green-4);
+    color: var(--purple-1);
+    
+    font-size: 1.30vw;
+
+
+    width: 40%;
+    height: 75%;
+}
+
+.create-account{
+    padding-top: 3%;
+}
+
+.create-account a{
+    font-size: 1.1vw;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
 }
