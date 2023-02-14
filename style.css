@@ -7,10 +7,16 @@
 }
 
 :root{
-    --color-1: #211522;
-    --color-2: #613659;
-    --color-3: #C197D2;
-    --color-4: #D3B1C2;
+    --purple-1: #22044c;
+    --purple-2: #52056C;
+    --purple-3: #b885ff;
+    --purple-4: #dcc2ff;
+
+    --green-1: #124c04;
+    --green-2: #1F6C05;
+    --green-3: #9eff85;
+    --green-4: #ceffc2;
+
 }
 
 body{
@@ -23,7 +29,7 @@ body{
 }
 
 .main-div{
-    background-color: #1F0838;
+    background-color: var(--purple-1);
 
     display: flex;
     justify-content: space-evenly;
@@ -37,15 +43,42 @@ body{
     border-radius: 30px ;
 }
 
-/*----------------- Left -----------------*/ 
+/*----------------- Left Div-----------------*/ 
 .left-div{
     border: 1px solid green;
-    width: 45%;
+    width: 55%;
     height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
+.left-div .left-title{
+    color: var(--green-3);
 
-/*----------------- Right -----------------*/ 
+    width: 90%;
+    height: 10%;
+
+    margin: 1%;
+    padding: 1%;
+    font-size: 1.75vw;
+    text-align: center;
+
+}
+
+.left-img{
+    width: 95%;
+    height: 85%;
+
+}
+
+.left-img img{
+    width: 100%;
+    height: 100%;
+}
+
+/*----------------- Right Div -----------------*/ 
 .right-div{
     border: 1px solid green;
 
@@ -53,30 +86,37 @@ body{
     align-items: center;
     justify-content: space-evenly;
 
-    width: 45%;
+    width: 40%;
     height: 90%;
 }
 
 
 .main-login{
-    background-color: #370E65;
+    background-color: var(--purple-2);
 
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 
     width: 95%;
-    height: 80%;
+    height: 95%;
 
     border-radius: 15px;
     padding: 5%;
 }
 
 .main-login .title-login{
+    background-color: #9eff85;
+    color: var(--purple-1);
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 
-    font-size: 25px;
+    margin: 1vw;
+    padding: 0.25vw;
+    border-radius: 1vw;
+    
+    font-size: 1.75vw;
 }
 
 .main-form{
@@ -89,22 +129,48 @@ body{
     margin: 5% 0%;
 }
 
+
 .main-login .button{
     display: flex;
     justify-content: space-evenly;
 }
 
+.user-input input,
+.password-input input{
+    background-color: var(--purple-3);
+    color: var(--purple-1);
+    text-align: center;
+    width: 100%;
+    padding: 1%;
+    margin-top: 2%;
+    border-radius: 1vw;
+    outline: none;
+}
+
+::placeholder {
+    color: var(--purple-1);
+  }
+
 .button{
     display: flex;
-    justify-content: space-evenly;
-    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    width: 100%;    
+    height: 20%;
 }
 
 .button button{
-    background-color: transparent;
+    background-color: var(--green-3);
+    width: 50%;
+    height: 80%;
+    
+    border-radius: 2vw;
+
 }
 
 .button a{
+    color: var(--purple-1);
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1.5vw;
+    cursor: pointer;
 }
